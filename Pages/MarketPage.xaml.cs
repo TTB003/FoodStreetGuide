@@ -42,6 +42,16 @@ namespace FoodStreetGuide.Pages
             };
 
             StallsView.ItemsSource = stalls;
+
+            // If coordinates available, show Google Maps web with a marker/center on the location
+            if (place.Latitude.HasValue && place.Longitude.HasValue)
+            {
+                var lat = place.Latitude.Value;
+                var lng = place.Longitude.Value;
+                // Use Google Maps web search URL which shows an interactive map centered on the lat/lng
+                var url = $"https://www.google.com/maps/search/?api=1&query={lat},{lng}";
+                MapView.Source = new UrlWebViewSource { Url = url };
+            }
         }
     }
 }

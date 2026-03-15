@@ -15,8 +15,9 @@ namespace FoodStreetGuide.Data
                     Id = "vinh-khach-market",
                     Category = "Chợ",
                     Address = "Chợ Ẩm Thực Vĩnh Khách, Thành phố",
-                    Latitude = null,
-                    Longitude = null,
+                    // Example coordinates (replace with real coordinates of Chợ Vĩnh Khách)
+                    Latitude = 10.762622,
+                    Longitude = 106.660172,
                     ImageUrl = "images/market.jpg",
                     OpeningHours = "06:00 - 22:00",
                     Names = new Dictionary<string,string>

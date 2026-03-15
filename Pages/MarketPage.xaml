@@ -15,6 +15,12 @@
             <Label Text="About" FontAttributes="Bold" FontSize="18" Margin="0,8" />
             <Label x:Name="MarketDescription" FontSize="14" />
 
+            <!-- Map view (Google Maps via web) -->
+            <Label Text="Bản đồ" FontAttributes="Bold" FontSize="18" Margin="0,8" />
+            <Frame CornerRadius="8" HasShadow="True" Padding="0" HeightRequest="300">
+                <WebView x:Name="MapView" />
+            </Frame>
+
             <Label Text="Các quầy / khu vực" FontAttributes="Bold" FontSize="18" Margin="0,12" />
             <CollectionView x:Name="StallsView" ItemsLayout="VerticalList">
                 <CollectionView.ItemTemplate>
